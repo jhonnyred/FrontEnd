@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arte e Criatividade para Pequenos Artistas</title>
+</head>
+<body>
+    <h1>Arte e Criatividade para Pequenos Artistas</h1>
+    <form action="https://67d4c2b6d2c7857431ee7cc3.mockapi.io/alunoCurso" method="post">
+        <fieldset>
+            <legend>Cadastro do Aluno</legend>
+            <!-- nome do aluno -->
+            <p>
+                <label for="nomeAluno">Nome do Aluno: </label>
+                <input type="text" name="nomeAluno" id="nomeAluno">
+            </p>
+            <!-- endereco -->
+            <p>
+                <label for="endereco">Endereço: </label>
+                <input type="text" name="endereco" id="endereco">
+            </p>
+            <!-- bairro -->
+            <p>
+                <label for="bairro">Bairro: </label>
+                <input type="text" name="bairro" id="bairro">
+            </p>
+            <!-- cidade -->
+            <p>
+                <label for="cidade">Cidade: </label>
+                <input type="text" name="cidade" id="cidade">
+            </p>
+            <!-- numero -->
+            <p>
+                <label for="numero">Número: </label>
+                <input type="text" name="numero" id="numero">
+            </p>
+            <!-- cep -->
+            <p>
+                <label for="cep">CEP: </label>
+                <input type="text" name="cep" id="cep">
+            </p>
+            <!-- complemento -->
+            <p>
+                <label for="complemento">Complemento: </label>
+                <input type="text" name="complemento" id="complemento">
+            </p>
+            <!-- estado -->
+            <p>
+                <label for="estado">Estado:</label>
+                <select name="estado" id="estado">
+                    <option value="0">Selecione...</option>
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="ES">Espírito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PR">Paraná</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="TO">Tocantins</option>
+                </select>                
+            </p>
+            <!-- telefone -->
+            <p>
+                <label for="telefone">Telefone: </label>
+                <input type="tel" name="telefone" id="telefone">
+            </p>
+            <!-- celular -->
+            <p>
+                <label for="celular">Celular: </label>
+                <input type="tel" name="celular" id="celular">
+            </p>
+            <!-- email -->
+            <p>
+                <label for="email">Email: </label>
+                <input type="email" name="email" id="email">
+            </p>
+            <!-- cor -->
+            <p>
+                <!-- Branca, Preta, Parda, Amarela, Indígen -->
+                <label for="cor">Cor: </label>
+                <select name="cor" id="cor">
+                    <option value="0">Selecione...</option>
+                    <option value="Branca">Branca</option>
+                    <option value="Preta">Preta</option>
+                    <option value="Parda">Parda</option>
+                    <option value="Amarela">Amarela</option>
+                    <option value="Indigena">Indígena</option>
+                </select>
+            </p>
+            <legend>Dados do Curso: </legend>
+            <!-- curso -->
+            <p>
+                <label for="nomeCurso">Curso: </label>
+                <input type="text" name="nomeCurso" id="nomeCurso" disabled value="Arte e Criatividade para Pequenos Artistas">
+            </p>
+            <!-- data de ingresso -->
+            <p>
+                <label for="dataIngresso">Data de Ingresso: </label>
+                <input type="date" name="dataIngresso" id="dataIngresso">
+            </p>
+            <!-- valor -->
+            <p>
+                <label for="valor">Valor (mensal): R$ </label>
+                <input type="number" name="nomeCurso" id="nomeCurso" disabled value="180,00">
+            </p>
+            <!-- parcelas -->
+            <p>
+                <label for="parcelas">Parcelas: </label>
+                <select type="number" name="parcelas" id="parcelas">
+                    <option value="0">Selecione...</option>
+                    <option value="2">2 Parcelas</option>
+                    <option value="4">4 Parcelas</option>
+                    <option value="6">6 Parcelas</option>
+                </select>
+            </p>
+        </fieldset>
+    </form>
+    <form action="https://67d4c2b6d2c7857431ee7cc3.mockapi.io/responsaveis" method="post">
+        <fieldset>
+            <legend>Dados dos Pais</legend>
+            <!-- Nome do Pai -->
+            <p>
+                <label for="nomePai">Nome do Pai: </label>
+                <input type="text" name="nomePai" id="nomePai">
+            </p>
+            <!-- Data de Nascimento do Pai -->
+            <p>
+                <label for="nascPai">Data de Nascimento do Pai: </label>
+                <input type="date" name="nascPai" id="nascPai">
+            </p>
+            <!-- Naturalidade do Pai -->
+            <p>
+                <label for="natuPai">Naturalidade do Pai: </label>
+                <input type="text" name="natuPai" id="natuPai">
+            </p>
+            <!-- Instrução do Pai -->
+            <p>
+                <label for="instruPai">Instrução do Pai: </label>
+                <input type="text" name="instruPai" id="instruPai">
+            </p>
+            <!-- Profissão do Pai -->
+            <p>
+                <label for="profisPai">Profissão do Pai: </label>
+                <input type="text" name="profisPai" id="profisPai">
+            </p>
+            <!-- Celular do Pai -->
+            <p>
+                <label for="celPai">Celular do Pai: </label>
+                <input type="tel" name="celPai" id="celPai">
+            </p>
+            <!-- Email do Pai -->
+            <p>
+                <label for="emailPai">Email do Pai: </label>
+                <input type="email" name="emailPai" id="emailPai">
+            </p>
+            <!-- CPF do Pai -->
+            <p>
+                <label for="cpfPai">CPF do Pai: </label>
+                <input type="text" name="cpfPai" id="cpfPai">
+            </p>
+            <!-- Responsável Financeiro (Pai) -->
+            <p>
+                <label for="respFinPai">Responsável Financeiro (Pai): </label>
+                <input type="checkbox" name="respFinPai" id="respFinPai">
+            </p>
+            <!-- Nome da Mãe -->
+            <p>
+                <label for="nomeMae">Nome da Mãe: </label>
+                <input type="text" name="nomeMae" id="nomeMae">
+            </p>
+            <!-- Data de Nascimento da Mãe -->
+            <p>
+                <label for="nascMae">Data de Nascimento da Mãe: </label>
+                <input type="date" name="nascMae" id="nascMae">
+            </p>
+            <!-- Naturalidade da Mãe -->
+            <p>
+                <label for="natuMae">Naturalidade da Mãe: </label>
+                <input type="text" name="natuMae" id="natuMae">
+            </p>
+            <!-- Instrução da Mãe -->
+            <p>
+                <label for="instruMae">Instrução da Mãe: </label>
+                <input type="text" name="instruMae" id="instruMae">
+            </p>
+            <!-- Profissão da Mãe -->
+            <p>
+                <label for="profisMae">Profissão da Mãe: </label>
+                <input type="text" name="profisMae" id="profisMae">
+            </p>
+            <!-- Email da Mãe -->
+            <p>
+                <label for="emailMae">Email da Mãe: </label>
+                <input type="email" name="emailMae" id="emailMae">
+            </p>
+            <!-- CPF da Mãe -->
+            <p>
+                <label for="cpfMae">CPF da Mãe: </label>
+                <input type="text" name="cpfMae" id="cpfMae">
+            </p>
+            <!-- Responsável Financeiro (Mãe) -->
+            <p>
+                <label for="respFinMae">Responsável Financeiro (Mãe): </label>
+                <input type="checkbox" name="respFinMae" id="respFinMae">
+            </p>
+        </fieldset>
+        <p>
+            <button type="submit">Gravar</button>
+            <button type="reset">Limpar</button>
+        </p>
+    </form>
+    <p><a href="Index.html" target="_blank">Voltar</a></p>
+</body>
+</html>
