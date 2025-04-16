@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head><title>Contar Palavras</title></head>
+<body>
+  <textarea id="texto" placeholder="Digite uma frase" rows="4" cols="40"></textarea><br>
+  <button onclick="contarPalavras()">Contar Palavras</button>
+  <p id="totalPalavras"></p>
+
+  <script>
+    function contarPalavras() {
+      const texto = document.getElementById("texto").value.trim();
+      const palavras = texto === "" ? 0 : texto.split(/\s+/).length;
+      document.getElementById("totalPalavras").textContent = "Palavras: " + palavras;
+    }
+  </script>
+</body>
+</html>

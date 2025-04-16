@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head><title>Lista de Tarefas</title></head>
+<body>
+  <input type="text" id="tarefaInput" placeholder="Digite a tarefa">
+  <button onclick="adicionarTarefa()">Adicionar</button>
+  <ul id="listaTarefas"></ul>
+
+  <script>
+    function adicionarTarefa() {
+      const texto = document.getElementById("tarefaInput").value;
+      if (texto.trim() === '') return;
+      const item = document.createElement("li");
+      item.textContent = texto;
+      document.getElementById("listaTarefas").appendChild(item);
+      document.getElementById("tarefaInput").value = '';
+    }
+  </script>
+</body>
+</html>

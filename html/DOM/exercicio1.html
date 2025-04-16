@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Trocar Cor</title>
+</head>
+<body>
+    <button onclick="mudarCor()">Trocar Cor</button>
+    <div id="caixa" style="width:200px;height:200px;background-color:gray;margin-top:10px;"></div>
+</body>
+<script>
+    function mudarCor() {
+        const cores = ['red', 'blue', 'green', 'purple', 'orange'];
+        const index = Math.floor(Math.random() * cores.length);
+        document.getElementById("caixa").style.backgroundColor = cores[index];
+    }
+</script>
+</html>
