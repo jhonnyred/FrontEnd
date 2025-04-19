@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <h2>Mudar de cor</h2>
+    <button onclick="mudarCor()">Trocar Cor</button>
+    <div id="caixa" style="width:200px;height:200px;background-color:gray;margin-top:10px;"></div>
+    <br>
+    <h2>Lista de Tarefas</h2>
+    <input type="text" id="tarefaInput" placeholder="Digite a tarefa">
+    <button onclick="adicionarTarefa()">Adicionar</button>
+    <ul id="listaTarefas"></ul>
+    <br>
+    <h2>Contador</h2>
+    <button onclick="incrementar()">Clique aqui</button>
+    <p id="contador">0</p>
+    <br>
+    <h2>Calculadora</h2>
+    <input type="number" id="num1" placeholder="Número 1">
+    <input type="number" id="num2" placeholder="Número 2"><br><br>
+    <button onclick="calcular('+')">Somar</button>
+    <button onclick="calcular('-')">Subtrair</button>
+    <button onclick="calcular('*')">Multiplicar</button>
+    <button onclick="calcular('/')">Dividir</button>
+    <p id="resultado"></p>
+    <br>
+    <h2>Contar Palavras</h2>
+    <textarea id="texto" placeholder="Digite uma frase" rows="4" cols="40"></textarea><br>
+    <button onclick="contarPalavras()">Contar Palavras</button>
+    <p id="totalPalavras"></p>
+    
+</body>
+<script>
+    function mudarCor() {
+    const cores = ['red', 'blue', 'green', 'purple', 'orange'];
+    const index = Math.floor(Math.random() * cores.length);
+    document.getElementById("caixa").style.backgroundColor = cores[index];
+}
+
+function adicionarTarefa() {
+    const texto = document.getElementById("tarefaInput").value;
+    if (texto.trim() === '') return;
+    const item = document.createElement("li");
+    item.textContent = texto;
+    document.getElementById("listaTarefas").appendChild(item);
+    document.getElementById("tarefaInput").value = '';
+}
+
+let count = 0;
+function incrementar() {
+  count++;
+  document.getElementById("contador").textContent = count;
+}
+
+function calcular(op) {
+    const a = parseFloat(document.getElementById("num1").value);
+    const b = parseFloat(document.getElementById("num2").value);
+    if (isNaN(a) || isNaN(b)) return alert("Digite os dois números");
+    if (op === '/' && b === 0) return alert("Impossível dividir por zero");
+
+    let res = 0;
+    if (op === '+') res = a + b;
+    if (op === '-') res = a - b;
+    if (op === '*') res = a * b;
+    if (op === '/') res = a / b;
+
+    document.getElementById("resultado").textContent = "Resultado: " + res;
+}
+
+function contarPalavras() {
+    const texto = document.getElementById("texto").value.trim();
+    const palavras = texto === "" ? 0 : texto.split(/\s+/).length;
+    document.getElementById("totalPalavras").textContent = "Palavras: " + palavras;
+}
+</script>
+</html>
