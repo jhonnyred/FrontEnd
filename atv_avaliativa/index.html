@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empresa.dev</title>
+</head>
+<link rel="stylesheet" href="style/estilo.css">
+<body>
+    <div class="titulo">
+        <img src="components/png-transparent-logo-consultant-small-business-finance-business-company-text-service.png" alt="Logo Empresa" width="250px" heigh="150px" title="Logo da Empresa">
+        <h1>Empresa.dev</h1>
+    </div>
+    <div class="corpo">
+        <div class="container">
+            <form>
+                <fieldset>
+                    <legend>Dados de Cadastro</legend>
+                    <p>
+                        <label for="nome">Nome: </label>
+                        <input type="text" name="name" id="name" required>
+                    </p>
+                    <p>
+                        <label for="phone">Telefone: </label>
+                        <input type="text" name="phone" id="phone" required>
+                    </p>
+                    <p>
+                        <label for="email">Email: </label>
+                        <input type="text" name="email" id="email" required>
+                    </p>
+                    <p>
+                        <label for="CPF">CPF: </label>
+                        <input type="text" name="CPF" id="CPF" required>
+                    </p>
+                    <p>
+                        <label for="RG">RG: </label>
+                        <input type="text" name="RG" id="RG">
+                    </p>
+                    <p>
+                        <label for="position">Cargo: </label>
+                        <select name="position" id="position">
+                            <option>selecione...</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="sector">Setor: </label>
+                        <select name="sector" id="sector">
+                            <option>selecione...</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="insurance">Convênio: </label>
+                        <select name="insurance" id="insurance">
+                            <option>selecione...</option>
+                        </select>
+                    </p>
+                    <div id="save">
+                        <button onclick="salvar(event)">Salvar</button>
+                    </div>
+                    <div id="saved"></div>
+                    
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</body>
+<script src="src/script.js"></script>
+</html>
