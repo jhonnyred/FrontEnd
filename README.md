@@ -12,6 +12,7 @@ Most of this repository structure speaks for itself, so no need to really explai
 
 ### 📁 ajax_fetch
 * JavaScript
+
 Studies about ajax_fetch functions.
 
 ### 📁 arrow_function 
