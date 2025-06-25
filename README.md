@@ -19,17 +19,17 @@ Studies about ajax_fetch functions.
 * JavaScript
 
 ### 📁 conceitos_basicos
-* JavaScript
 Translating it to english, it's name is "basic_concepts".
+* JavaScript
 
 ### 📁 culinarios 
+Translating it to english, it's name is "culinaryos". This was a test made in class, basically a CRUD, it didn't turn out so well, but we had only 3 hours and it wasn't allowed to consult other materials...
 * JavaScript
 * CSS
 * HTML
-Translating it to english, it's name is "culinaryos". This was a test made in class, basically a CRUD, it didn't turn out so well, but we had only 3 hours and it wasn't allowed to consult other materials...
 
 ### 📁 previsao
+Translating it to english, it's name is "forecast". This was basically a "homework", we had to consume a forecast API and display it in HTML/CSS/JavaScript.
 * JavasScript
 * CSS
 * HTML
-Translating it to english, it's name is "forecast". This was basically a "homework", we had to consume a forecast API and display it in HTML/CSS/JavaScript.
